@@ -26,6 +26,22 @@ A representative from each work group was chosen to respond to follow up to conf
 
 # Code Overview
 
-Python 3.7 was used for ETL and NLP.  The following specific modules used include:
+Python 3.7 using Jupyter notebook was used for ETL and NLP.  The code is included in InternetOutagesNLP.ipynb  The following specific modules used include:
+
+- twitterscraper  - used for extracting Tweets
+- pandas, numpy, matplotlib  - data anlytics packages
+- sklearn, seaborn  - machine learning, and statistics
+- nltk, word2vec, CountVectorizer - NLP packages
+
+1.  Tweets were extracted and saved to csvs from a list of southwestern cities including: Houston, San Antonio, Austin, Dallas, Fort Worth, Oklahoma City, Tulsa, Santa Fe, and Aluquerque.  
+2.  The csvs were read into data frames with text, timestamp and location fields.
+3.  The text_clean() function used a regex to filter only words, and a custom list of stop words was used for further filtering.
+4.  The cleaned data frame tweets_df was then updated.
+5.  CountVecotrizer was instantiated and summaries of top 10 occuring words and phrases were found.
+6.  The nltk.corpus stopwords package and further use of regex's were applied to tweets_df, before the remains were composed into the final_tweet_list list to be tokenized.
+7.  The Word2Vec model was instantiated as tweets2vec and trained on final_tweet_list.
+8.  A t-SNE model from sklearn was applied to the tweets2vec model.
+9.  
+
 
 
