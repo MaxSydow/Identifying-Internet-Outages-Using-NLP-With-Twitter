@@ -34,18 +34,20 @@ Python 3.7 was used in a Jupyter notebook for ETL and NLP.  The code is included
 - nltk, word2vec, CountVectorizer - NLP packages
 
 #### The following outlines what the code does
+Functions, packages, and ML models are indicated in **bold**.
+Data frames and lists are indicate using _italics_.
 
 1.  Tweets were extracted and saved to csvs from a list of southwestern cities including: Houston, San Antonio, Austin, Dallas, Fort Worth, Oklahoma City, Tulsa, Santa Fe, and Aluquerque.  
 2.  The csvs were read into data frames with text, timestamp and location fields.
-3.  The text_clean() function used a regex to filter only words, and a custom list of stop words was used for further filtering.
-4.  The cleaned data frame tweets_df was then updated.
-5.  CountVecotrizer was instantiated and summaries of top 10 occuring words and phrases were found.
-6.  The nltk.corpus stopwords package and further use of regex's were applied to tweets_df, before the remains were composed into the final_tweet_list list to be tokenized.
-7.  The Word2Vec model was instantiated as tweets2vec and trained on final_tweet_list.
-8.  A t-SNE model from sklearn was applied to the tweets2vec model.
-9.  The vectorize_corpus() function was used to create a corpus of key words related to outages.
-10. Lists of words related to outages, and opposites were initialized: internet_out and not_out.
-11. Cosine similarity scores were computed using the cos_sim() function to quantify similarity of words from final_tweet_list to internet_out and not_out lists.
+3.  The **text_clean()** function used a regex to filter only words, and a custom list of stop words was used for further filtering.
+4.  The cleaned data frame _tweets_df_ was then updated.
+5.  **CountVecotrizer** was instantiated and summaries of top 10 occuring words and phrases were found.
+6.  The **nltk.corpus** stopwords package and further use of regex's were applied to _tweets_df_, before the remains were composed into the _final_tweet_list_ list to be tokenized.
+7.  The **Word2Vec** model was instantiated as **tweets2vec** and trained on _final_tweet_list_.
+8.  A **t-SNE** model from sklearn was applied to the _tweets2vec_ model.
+9.  The **vectorize_corpus()** function was used to create a corpus of key words related to outages.
+10. Lists of words related to outages, and opposites were initialized: _internet_out_ and _not_out_.
+11. Cosine similarity scores were computed using the **cos_sim()** function to quantify similarity of words from _final_tweet_list_ to _internet_out_ and _not_out_ lists.
 12.  A t-SNE plot was created to show strength of relatedness according to size of circle in 2D plot, with blue corresponding to more related to outage, and grey more related to not outage.  
 
 
