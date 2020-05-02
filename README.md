@@ -26,12 +26,14 @@ A representative from each work group was chosen to respond to follow up to conf
 
 # Code Overview
 
-Python 3.7 using Jupyter notebook was used for ETL and NLP.  The code is included in InternetOutagesNLP.ipynb  The following specific modules used include:
+Python 3.7 was used in a Jupyter notebook for ETL and NLP.  The code is included in InternetOutagesNLP.ipynb  The following specific modules used include:
 
 - twitterscraper  - used for extracting Tweets
 - pandas, numpy, matplotlib  - data anlytics packages
 - sklearn, seaborn  - machine learning, and statistics
 - nltk, word2vec, CountVectorizer - NLP packages
+
+#### The following outlines what the code does
 
 1.  Tweets were extracted and saved to csvs from a list of southwestern cities including: Houston, San Antonio, Austin, Dallas, Fort Worth, Oklahoma City, Tulsa, Santa Fe, and Aluquerque.  
 2.  The csvs were read into data frames with text, timestamp and location fields.
@@ -41,7 +43,9 @@ Python 3.7 using Jupyter notebook was used for ETL and NLP.  The code is include
 6.  The nltk.corpus stopwords package and further use of regex's were applied to tweets_df, before the remains were composed into the final_tweet_list list to be tokenized.
 7.  The Word2Vec model was instantiated as tweets2vec and trained on final_tweet_list.
 8.  A t-SNE model from sklearn was applied to the tweets2vec model.
-9.  
-
+9.  The vectorize_corpus() function was used to create a corpus of key words related to outages.
+10. Lists of words related to outages, and opposites were initialized: internet_out and not_out.
+11. Cosine similarity scores were computed using the cos_sim() function to quantify similarity of words from final_tweet_list to internet_out and not_out lists.
+12.  A t-SNE plot was created to show strength of relatedness according to size of circle in 2D plot, with blue corresponding to more related to outage, and grey more related to not outage.  
 
 
