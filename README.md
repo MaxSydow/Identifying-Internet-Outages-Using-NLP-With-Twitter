@@ -2,7 +2,18 @@
 
 # About
 
-This is a project proposal, and hypothetical summary of implementation used in my capstone project for my B.S. in Data Analytics at Western Governors University.
+This is a summary of my capstone project for my Bachelors in Data Analytics at Western Governors University (2020).  The business need related purpose of it was to use natural language processing to allow an internet service provider to take a more pro-active approach in outage detection.   
+
+
+# Contents
+
+## Project Summary
+
+## Code Overview
+
+## Project Methodology
+
+## Vizualization Examples
 
 ## Project Summary
 
@@ -50,5 +61,42 @@ Data frames and lists are indicated using _italics_.
 10. Lists of words related to outages, and opposites were initialized: _internet_out_ and _not_out_.
 11. Cosine similarity scores were computed using the **cos_sim()** function to quantify similarity of words from _final_tweet_list_ to _internet_out_ and _not_out_ lists.
 12.  A t-SNE plot was created to show strength of relatedness according to size of circles in 2D plot, with blue relating to occurance of outage, and grey corresponding to not being related to outage.
+
+
+# Project Methodology
+
+The Scrum project implementation methodology was used to carry this project out.  Scrum breaks a project down into sprints, which involve team members working in a focused manner on a specific objective.  Scrum meetings are scheduled to communicate progress on achieving benchmarks.  Little scope creep or deviation is allowed, which keeps teams focused on their goals defined by the sprints.  The path from extracting Tweets to presenting a functional dashboard can be broken down into manageable tasks.  
+
+
+A team of analysts, developers, a data scientist, a product owner, and Scrum Master were assembled.  The product owner and Scrum Master are roles specifically designated to manage a Scrum project.  The product owner served as liaison between the project group and stakeholders.  Stakeholders include the relevant workgroups identified above, as well as some senior management.  This role is also responsible for scheduling and managing any backlog of objectives that may not have met the planned timeline.  The Scrum Master serves as a team leader in the project.  They work closely with team members to keep the project on schedule and communicate any needs of the team with the product owner.  The scrum master also conducts sprint meetings and documents progress in achieving objectives.  
+
+
+The analysts were heavily involved with the earlier objectives of the project including.  These objectives include:
+1.	Scraping data from Tweets by username going back 5 yrs.
+2.	Cleaning data – remove stop words, etc.
+3.	Preparing data frames and conduct NLP
+4.	Extracting data from existing outage reporting system going back 5 yrs.
+
+The data scientist was then responsible for performing the machine learning aspects.  This included:
+1.	Performing correlation study between frequently appearing words and actual outage occurrence
+2.	Grouping high frequency words into training and testing feature sets
+3.	Coding and running Word2Vec algorithm
+
+Developers played a crucial role in the latter portions of the project including:
+1.	Managing locations of scripts and csv’s, and creating batch files for them
+2.	Scheduling execution of scripts, and email alerts
+Analysts were also responsible for creating the Tableau dashboard, while developers linked it to the existing outage reporting site.
+
+
+# Vizualization Examples
+
+### t-SNE Plot
+
+![t-SNE](https://user-images.githubusercontent.com/56166497/80894694-e3a42f00-8ca2-11ea-8f8d-86b02fdd740b.png)
+
+
+### Example bar chart (made with Tableau) showing key word counts related to outages pertaining to network congestion.
+
+![tweet_count](https://user-images.githubusercontent.com/56166497/80894744-907eac00-8ca3-11ea-87c1-fc09ca2c34aa.png)
 
 
