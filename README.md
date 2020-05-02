@@ -8,13 +8,13 @@ This is a summary of my capstone project for my Bachelors in Data Analytics at W
 # Contents
 
 ## Project Summary
-
+<a name="Project Summary"/>
 ## Code Overview
 
 ## Project Methodology
 
 ## Vizualization Examples
-
+<a name="Vizualization Examples"/>
 ## Project Summary
 
 The overall goal of this project was to provide alerts for possible internet outages by analyzing content from customers posted on Twitter.  The result was a visual dashboard showing counts of observed word groupings related to possible outage types.  This dashboard was incorporated into the ISPs existing outage reporting system, and was used to trigger email alerts to relevant work groups to aid in diagnosing and resolving a common cause issue.  
