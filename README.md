@@ -17,10 +17,8 @@ This is a summary of my capstone project for my Bachelors in Data Analytics at W
 
 
 ##### Table of Contents  
-[Headers](#headers)  
-[Emphasis](#emphasis)  
-...snip...    
-<a name="headers"/>
+[Project Summary](#Project Summary)     
+<a name="Project Summary"/>
 ## Headers
 
 ## Project Summary
