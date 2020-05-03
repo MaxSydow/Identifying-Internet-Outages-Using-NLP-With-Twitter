@@ -5,7 +5,7 @@
 This is a summary of my capstone project for my Bachelors in Data Analytics at Western Governors University (2020).  The business need related purpose of it was to use natural language processing to allow an internet service provider to take a more pro-active approach in outage detection.   
 
 
-##### Table of Contents  
+# Contents  
 [Project Summary](#project-summary)
 
 [Code Overview](#code-overview)
