@@ -6,16 +6,16 @@ This is a summary of my capstone project for my Bachelors in Data Analytics at W
 
 
 ##### Table of Contents  
-## Project Summary
+#Project Summary
 [#Project Summary](#project-summary)
 
-## Code Overview 
-<a name="Code Overview"/>
+##Code Overview 
 
-## Project Methodology 
+
+#Project Methodology 
 [#Project Methodology](#project-methodology)
 
-## Vizualization Examples 
+##Vizualization Examples 
 <a name="Vizualization Examples"/>
 
 
