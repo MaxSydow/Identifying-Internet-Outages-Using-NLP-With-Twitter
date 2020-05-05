@@ -12,7 +12,7 @@ Prject_Summary.pdf - PDF write up of project summary, aligned with capstone proj
 
 InternetOutageNLP.ipynb - Jupyter notebook of Phython code used for ETL and NLP
 
-df_tweets.csv - comma separated file of extracted Tweets which was loaded into original data frame for processing
+df_tweets.csv - comma separated file of extracted Tweets which was loaded into initial data frame for processing
 
 
 # Contents  
